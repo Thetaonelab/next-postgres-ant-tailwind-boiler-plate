@@ -1,0 +1,57 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --primary-color:rgb(217 54 62);
+  --secondary-color: rgb(72 56 110);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-start-rgb));
+}
+
+a {
+  color: var(--primary-color);
+  font-weight: 500;
+}
+.ant-btn-primary {
+  background-color: var(--primary-color); 
+  font-weight: 500;
+}
+.ant-form-item-label{
+  font-weight: 500;
+}
+.ant-form-item-explain-error{
+  font-size: 12px;
+  font-weight: 500;
+}
+.text-heading{
+    font-size: 18px;
+}
+.text-primary {
+  font-size: 16px;
+}
+.text-secondary {
+  font-size: 14px;
+}
+.title{
+   display: block;
+   font-size: 22px;
+   line-height: 25px;
+   margin-left: 10%;
+}
